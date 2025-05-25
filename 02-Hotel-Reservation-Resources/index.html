@@ -5,43 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="../02-Hotel-Reservation-Solutions/Resources/Questioner/styles.css">
     <title>Hotel reservation</title>
 </head>
 
 <body>
-    <section id="welcome">
-        <h1>&#9734; Welcome to our family hotel &#9734;</h1>
-        <div class="home-container">
-            <div class="info">
-                <h1>Hotel reservation</h1>
-            </div>
-        </div>
-    </section>
-
-    <div class="site-content">   
-        <!-- Site Content -->
-
-        <div id="guest-details-form-content">
-            <h2>Guest Details</h2>
-            <label>Name: <input type="text" id="guestName"></label><br>
-            <label>Phone: <input type="tel" id="guestPhone"></label><br>
-            <label>Email: <input type="email" id="guestEmail"></label><br><br>
-            <button onclick="submitGuestDetails()">Submit</button>
-          </div>
-          
-        <!-- Thank you, page! -->
-        <div class="thank-you-content custom-form">
-            <div class="background">
-                <div class="shape"></div>
-                <div class="shape"></div>
-            </div>
-            <form class="thank-you">
-                <h3>Thank you for your reservation!</h3>
-                <button id="new-reservation">Make new reservation</button>
-            </form>
+<section id="welcome">
+    <h1>&#9734; Welcome to our family hotel &#9734;</h1>
+    <div class="home-container">
+        <div class="info">
+            <h1>Hotel reservation</h1>
         </div>
     </div>
-    <script src="solution.js"></script>
+</section>
+
+<div class="site-content">
+    <!-- Site Content -->
+
+    <div id="guest-details-form-content">
+        <h2>Guest Details</h2>
+        <label>Name: <input type="text" id="guestName"></label><br>
+        <label>Phone: <input type="tel" id="guestPhone"></label><br>
+        <label>Email: <input type="email" id="guestEmail"></label><br><br>
+        <button onclick="submitGuestDetails()">Submit</button>
+    </div>
+
+    <div class="search-form-content custom-form">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form>
+            <h3>Search Here</h3>
+
+            <label for="check-in">Check-in:</label>
+            <input type="date" id="check-in" name="check-in">
+
+            <label for="check-out">Check-out:</label>
+            <input type="date" id="check-out" name="check-out">
+
+            <label for="people">Numbers of people:</label>
+            <input type="number" min="1" id="people" name="phone-number">
+
+            <button id="search-form-button">Next</button>
+        </form>
+    </div>
+
+    <!-- Thank you, page! -->
+    <div class="thank-you-content custom-form">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form class="thank-you">
+            <h3>Thank you for your reservation!</h3>
+            <button id="new-reservation">Make new reservation</button>
+        </form>
+    </div>
+</div>
+<script src="solution.js"></script>
+<script src="../02-Hotel-Reservation-Solutions/Resources/Questioner/solution.js"></script>
 </body>
 
 </html>
