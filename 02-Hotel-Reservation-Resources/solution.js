@@ -27,10 +27,8 @@ function submitGuestDetails() {
     reservation.name = document.getElementById('guestName').value;
     reservation.phone = document.getElementById('guestPhone').value;
     reservation.email = document.getElementById('guestEmail').value;
-
-    alert(`Guest submitted:\nName: ${reservation.name}\nPhone: ${reservation.phone}\nEmail: ${reservation.email}`);
-
-    // Показване на thank-you
-    document.querySelectorAll('.custom-form').forEach(div => div.classList.add('hidden'));
-    document.querySelector('.thank-you-content.custom-form').classList.remove('hidden');
-}
+  
+    console.log(reservation); // За проверка
+  
+    changeContent('verifier-content');
+  }
