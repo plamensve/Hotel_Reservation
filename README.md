@@ -1,4 +1,4 @@
-# Hotel_Reservation
+# Hotel_Reservation - Нова промяна
 DevOps 2025 - Lecture 4 / Exercise 2
 
 ## "Hotel Reservation" Project
